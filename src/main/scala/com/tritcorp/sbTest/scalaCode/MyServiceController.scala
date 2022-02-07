@@ -1,5 +1,6 @@
-package com.tritcorp.sbTest
+package com.tritcorp.sbTest.scalaCode
 
+import com.tritcorp.sbTest.javaCode._
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.http.MediaType
 import org.springframework.stereotype.Controller
@@ -8,10 +9,10 @@ import org.springframework.web.bind.annotation.{RequestMapping, RequestMethod, R
 @Controller
 class MyServiceController @Autowired()(myService: MyServiceJava) {
 
-  @RequestMapping(path = Array("/test"), method = Array(RequestMethod.GET), produces = Array(MediaType.TEXT_PLAIN_VALUE))
+  @RequestMapping(path = Array("/testScalaJava"), method = Array(RequestMethod.GET), produces = Array(MediaType.TEXT_PLAIN_VALUE))
   @ResponseBody
   def handleRequest(): String = {
-    "Hallo from a Scala controller! " + myService.getMessage
+    s"Hallo from a Scala controller! ${myService.getMessage}"
   }
 
 }

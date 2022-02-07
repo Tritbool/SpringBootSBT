@@ -1,4 +1,6 @@
-package com.tritcorp.sbTest
+package com.tritcorp.sbTest.scalaCode
+
+import com.tritcorp.sbTest.scalaCode.MyServiceConfig
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Service
 

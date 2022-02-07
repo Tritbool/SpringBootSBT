@@ -1,5 +1,6 @@
-package com.tritcorp.sbTest;
+package com.tritcorp.sbTest.javaCode;
 
+import com.tritcorp.sbTest.scalaCode.MyServiceConfig;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -8,7 +9,7 @@ public class MyServiceJava {
     @Autowired
     MyServiceConfig conf;
 
-    String getMessage() {
+    public String getMessage() {
         return "The java service says: " + conf.getKey();
     }
 }

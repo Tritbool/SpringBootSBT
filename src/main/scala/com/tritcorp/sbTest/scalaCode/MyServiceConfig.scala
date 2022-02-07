@@ -1,4 +1,4 @@
-package com.tritcorp.sbTest
+package com.tritcorp.sbTest.scalaCode
 
 import org.springframework.boot.context.properties.ConfigurationProperties
 import org.springframework.stereotype.Component
