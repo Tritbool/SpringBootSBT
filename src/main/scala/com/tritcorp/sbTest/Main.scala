@@ -12,7 +12,7 @@ object Main {
 
   def main(args:Array[String]):Unit={
     SpringApplication.run(classOf[MyServiceApplication], args :_ *)
-
+    Thread.currentThread().join()
   }
 }
 
